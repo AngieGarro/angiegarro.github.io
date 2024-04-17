@@ -785,20 +785,27 @@ footer a{
     width: 100%;
     height: 100%;
   }
-  .valores .hi-slide,
+  .valores .contenedor-valores {
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  .valores .hi-slide {
+    width: 100%;
+    height: 200px; /* Ajusta la altura del slide para dispositivos pequeños */
+  }
+  
   .valores .hi-slide .hi-next,
   .valores .hi-slide .hi-prev {
-    width: 300px;
-    margin: 0 auto;
-    right: unset;
-    left: unset;
+    display: none; /* Ocultar controles de navegación en dispositivos pequeños */
   }
-  .valores .hi-slide .hi-next {
-    right: 0;
+
+  /* Hacer las imágenes responsivas */
+  .valores .hi-slide > ul > li > .slide-content img {
+    max-width: 100%;
+    height: auto;
   }
-  .valores .hi-slide .hi-prev {
-    left: 0;
-  }
+
   .contacto .contenedor-contacto .fila {
     flex-direction: column;
   }
