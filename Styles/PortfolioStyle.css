@@ -976,6 +976,12 @@ span{
   }
 
   @media (max-width: 450px) {
+    .header {
+        background: transparent;
+        margin-bottom: 1.3rem;
+        top: -16;
+        left: -20;
+    }
     .home .profession-container {
         flex-direction: column-reverse;
         align-items: center;
@@ -1043,8 +1049,74 @@ span{
         width: 100%;
       }
   }
+  @media (max-width: 430px){
+    .header {
+        position: relative; /* Cambia la posición a relativa */
+        z-index: 1; /* Asegura que el encabezado esté por debajo de la sección home */
+        background: var(--bg-color);
+        box-shadow: none;
+    }
 
+    .home {
+        position: relative; /* Añade posición relativa */
+        z-index: 2; /* Asegura que la sección home esté por encima del encabezado */
+        background: var(--bg-color);
+    }
+    .about{
+        margin: 10px;
+        justify-content: center;
+    }
+
+    .home-content h3{
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: .3;
+        color: var(--text-color);
+    }
+    
+    .home-content h1{
+        font-size: 3rem;
+        font-weight: bold;
+        color: var(--text-color);
+    }
+    
+    .home-content p{
+        font-size: 1.6rem;
+        color: var(--text-color);
+    }
+    .home .profession-container .overlay {
+        position: fixed;
+        top: 50rem;
+        left: 70%;
+        right: 0;
+        transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
+        border-width: 23.9rem;
+        display: block;
+      }
+
+}
   @media (max-width: 365px) {
+
+    .header {
+        background: transparent;
+        margin-bottom: 1.3rem;
+        top: -16;
+        left: 0;
+    }
+
+    .header.sticky{
+        display: none;
+    }
+    
+    
+    .header.sticky .navbar a{
+        position: relative;
+        font-size: 2rem;
+        color: var(--main-color);
+        font-weight: 550;
+        margin-right: 3.5rem;
+        transition: .3s ease;
+    }
     .home .profession-container {
         flex-direction: column-reverse;
         align-items: center;
@@ -1068,8 +1140,12 @@ span{
         display: block;
       }
 
+      .home .home-content{
+        margin-top: 50px;
+      }
+
       .home .home-content h3{
-        font-size: 1.6rem;
+        font-size: 1.8rem;
       }
 
       .skills .fila{
@@ -1116,3 +1192,38 @@ span{
         width: 100%;
       }
   }
+
+  @media (max-width: 360px){
+    .header {
+        position: relative; /* Cambia la posición a relativa */
+        z-index: 1; /* Asegura que el encabezado esté por debajo de la sección home */
+    }
+
+    .home {
+        position: relative; /* Añade posición relativa */
+        z-index: 2; /* Asegura que la sección home esté por encima del encabezado */
+    }
+    .about{
+        margin: 10px;
+        justify-content: center;
+    }
+
+    .home-content h3{
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: .3;
+        color: var(--text-color);
+    }
+    
+    .home-content h1{
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: var(--text-color);
+    }
+    
+    .home-content p{
+        font-size: 1.6rem;
+        color: var(--text-color);
+    }
+
+}
