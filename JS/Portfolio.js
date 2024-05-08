@@ -86,8 +86,8 @@ scrollToTopBtn.onclick = function() {
 let darkModeIcon = document.querySelector('#darkMode-icon');
 
 darkModeIcon.onclick = () => {
-    darkModeIcon.classList.toggle('bx-sun');
-    document.body.classList.toggle('dark-mode');
+    darkModeIcon.classList.toggle('bx-moon');
+    document.body.classList.toggle('light-mode');
 };
 
 

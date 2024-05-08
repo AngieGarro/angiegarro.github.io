@@ -13,18 +13,19 @@
 }
 
 :root{
-    --bg-color: #fff;
-    --text-color: #333;
-    --main-color: #5e17ebff;
-    --main-color-secondary: #ff39b3ff;
-    --white-color: #fff;
-    --shadow-color: rgba(0, 0, 0, .2);
-}
-
-.dark-mode{
     --bg-color: #000;
     --text-color: #fff;
     --shadow-color: rgba(0, 0, 0, .7);
+    --main-color: #5e17ebff;
+    --main-color-secondary: #ff39b3ff;
+    --white-color: #fff;
+
+}
+
+.light-mode{
+    --bg-color: #fff;
+    --text-color: #333;
+    --shadow-color: rgba(0, 0, 0, .2);
 }
 
 html{
