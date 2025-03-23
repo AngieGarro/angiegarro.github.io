@@ -71,18 +71,6 @@ body{
     opacity: .9;
 }
 
-.logo{
-    width: 130px; /* Ancho deseado del contenedor del logo */
-    height: 130px; /* Alto deseado del contenedor del logo */
-    margin-right: auto;
-    cursor: default;
-}
-
-.logo img {
-    max-width: 100%; 
-    max-height: 100%; 
-    display: block; /* Evita espacios no deseados debajo de la imagen */
-  }
 
 .navbar {
     position: relative; /* Ajusta la posición del nav */
@@ -399,7 +387,7 @@ span{
 }
 
 .services .services-container .service-box{
-    flex: 1 1 40rem;
+    flex: 1 1 50rem;
     background: var(--bg-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
@@ -466,7 +454,7 @@ span{
 
 .skills .fila .col .card{
     border: 2px solid var(--bg-color);
-    height: 300px;
+    height: 400px;
     background: black;
     padding: 30px;
     padding-bottom: 50px;
@@ -490,7 +478,7 @@ span{
 
 .skills .fila .col .card img{
     width: 180px; 
-    height: 200px; 
+    height: 290px; 
     max-width: 100%;
     max-height: 100%;
 }
